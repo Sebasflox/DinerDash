@@ -9,9 +9,9 @@ public class Menu_comida {
     private String [] Menu = {"Pizza", "Hamburguesa", "Sushi"};
     
     public void Menu_comida(){
-        Nodo_FilaEntrada app = new Nodo_FilaEntrada();
+        Cola_FilaEntrada app = new Cola_FilaEntrada();
         
-        for(int x=0; x<app.Nodo_FilaEntrada(); x++){
+        for(int x=0; x<app.dequeue(); x++){
             int indice_random = random.nextInt(Menu.length);
         }
         
