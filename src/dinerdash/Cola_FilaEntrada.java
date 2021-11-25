@@ -29,4 +29,9 @@ public class Cola_FilaEntrada {
             first = first.siguiente;
     }
     
+    public void imprimir(){
+        if (first != null)
+            first = first.siguiente;
+    }
+    
 }
