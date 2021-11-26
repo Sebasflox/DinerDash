@@ -11,9 +11,9 @@ public class Menu_comida {
     public void Menu_comida(){
         Cola_FilaEntrada app = new Cola_FilaEntrada();
         
-        for(int x=0; x<app.dequeue(); x++){
-            int indice_random = random.nextInt(Menu.length);
-        }
+        //for(int x=0; x<app.dequeue(); x++){
+        //    int indice_random = random.nextInt(Menu.length);
+        //}
         
     }
        
