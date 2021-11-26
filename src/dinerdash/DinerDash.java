@@ -5,8 +5,10 @@ public class DinerDash {
 
     public static void main(String[] args) {
         
-        Menu_comida app = new Menu_comida();
-        app.Menu_comida();
+        Cola_FilaEntrada impre = new Cola_FilaEntrada();
+        BusinessLogic app = new BusinessLogic();
+
+        app.Random();
         
     }
     
