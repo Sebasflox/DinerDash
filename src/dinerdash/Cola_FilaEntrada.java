@@ -29,9 +29,18 @@ public class Cola_FilaEntrada {
             first = first.siguiente;
     }
     
-    public void imprimir(){
-        if (first != null)
-            first = first.siguiente;
+    
+     public int contar()
+    {
+        int contador=0;
+        Nodo_FilaEntrada c=this.first;
+        while(c!=null)
+    {
+        contador++;
+        c=c.siguiente;
+    }
+        //System.out.println("Numero de datos en la cola: "+contador);
+        return contador;
     }
     
 }
