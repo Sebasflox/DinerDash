@@ -42,16 +42,16 @@ public class vista extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 410, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 530, -1, -1));
 
         jButton2.setBackground(java.awt.Color.darkGray);
         jButton2.setForeground(java.awt.Color.orange);
         jButton2.setText("Pago");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 80, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 210, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Custom Artboard.jpg"))); // NOI18N
         jLabel1.setText("jlabelFondo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1973, 844));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 2000, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
