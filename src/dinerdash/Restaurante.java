@@ -5,9 +5,10 @@ public class Restaurante {
     private int Mesas [][] = new int [15][6];
     
     public void Mesas(){
+
         for(int x = 0; x < Mesas.length; x++) {
             for (int y = 0; y < Mesas[x].length; y++) {
-                Mesas[x][y] = app.Valor;//estamos teniendo problemas con éste valor, no retorna el valor del primero de la cola
+                Mesas[x][y] = app.valor;//estamos teniendo problemas con éste valor, no retorna el valor del primero de la cola
                 //hola
             }
         }
