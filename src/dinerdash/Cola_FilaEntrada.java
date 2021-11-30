@@ -7,6 +7,7 @@ public class Cola_FilaEntrada {
     private Nodo_FilaEntrada last; //Puntero al final
     int Valor;
     
+    
     Cola_FilaEntrada(){
         first = last = null;
     }
@@ -28,28 +29,22 @@ public class Cola_FilaEntrada {
     public void dequeue () { //Borra el primero de la cola
         if (first != null) //Si el primero es diferente a null (tiene un dato)
             first = first.siguiente; //El puntero first cambia de posicion
-    } 
-    
-    
-     public int contar()
-    {
+    }
+    public int contar() {
         int contador=0;
         Nodo_FilaEntrada c=this.first;
         while(c!=null)
-    {
-        contador++;
-        c=c.siguiente;
-    }
-        //System.out.println("Numero de datos en la cola: "+contador);
+        {
+            contador++;
+            c=c.siguiente;
+        }
+        System.out.println("Numero de datos en la cola: "+contador); //esto cuenta los datos en la cola
         return contador;
+        
     }
      
-    public void imprimir (){
-        
-        System.out.println(first.fila_de_la_entrada);
-        //return Valor;
-    }
-    
-    
-    
+    public void imprimir (){     
+        System.out.println(first.fila_de_la_entrada); //este es el valor del primero de la cola
+        Valor = first.fila_de_la_entrada; //le asignamos a la variable Valor, el valor del primero en la cola
+    }   
 }
