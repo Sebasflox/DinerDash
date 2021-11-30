@@ -5,11 +5,13 @@ public class DinerDash {
 
     public static void main(String[] args) {
         
-        Cola_FilaEntrada impre = new Cola_FilaEntrada();
-        BusinessLogic app = new BusinessLogic();
+        Cola_FilaEntrada Cola = new Cola_FilaEntrada();
+        BusinessLogic Business = new BusinessLogic();
+        Restaurante Rest = new Restaurante();
 
-        app.Random();
-        
+        Business.Random();
+        Rest.Mesas();
+//        Cola.HalarInicio();
     }
     
 }
