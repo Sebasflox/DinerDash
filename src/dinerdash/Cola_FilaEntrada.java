@@ -5,7 +5,7 @@ public class Cola_FilaEntrada {
     
     private Nodo_FilaEntrada first; //Puntero al principio
     private Nodo_FilaEntrada last; //Puntero al final
-    int Valor;
+    int valor;
     
     
     Cola_FilaEntrada(){
@@ -40,11 +40,15 @@ public class Cola_FilaEntrada {
         }
         System.out.println("Numero de datos en la cola: "+contador); //esto cuenta los datos en la cola
         return contador;
-        
+
+    }
+    
+    public void imprimir (){     
+    System.out.println(first.fila_de_la_entrada); //este es el valor del primero de la cola
+    valor = first.fila_de_la_entrada; //le asignamos a la variable Valor, el valor del primero en la cola
+
     }
      
-    public void imprimir (){     
-        System.out.println(first.fila_de_la_entrada); //este es el valor del primero de la cola
-        Valor = first.fila_de_la_entrada; //le asignamos a la variable Valor, el valor del primero en la cola
+
     }   
-}
+
