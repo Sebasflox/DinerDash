@@ -13,9 +13,8 @@ public class BusinessLogic {
             app.enqueue(indice_random + 1);
         }
         while (app.contar() < 5);
-        
-        app.imprimir();
-//        app.HalarInicio();
+        app.imprimir(); //este imprime el valor del primero de la cola
+        app.contar(); //este imprime el contador de los datos en la cola
         
     }
     
