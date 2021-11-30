@@ -11,7 +11,6 @@ public class DinerDash {
 
         Business.Random();
         Rest.Mesas();
-//        Cola.HalarInicio();
     }
     
 }
