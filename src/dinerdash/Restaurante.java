@@ -8,8 +8,7 @@ public class Restaurante {
 
         for(int x = 0; x < Mesas.length; x++) {
             for (int y = 0; y < Mesas[x].length; y++) {
-                Mesas[x][y] = app.valor;//estamos teniendo problemas con éste valor, no retorna el valor del primero de la cola
-                //hola
+                Mesas[x][y] = 0;//estamos teniendo problemas con éste valor, no retorna el valor del primero de la cola
             }
         }
         for (int x = 0; x < Mesas.length; x++) {
