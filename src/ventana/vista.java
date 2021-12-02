@@ -7,6 +7,7 @@ package ventana;
 
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author rober
@@ -152,7 +153,7 @@ public class vista extends javax.swing.JFrame {
         getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1780, 480, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Custom Artboard.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 50, 40));
@@ -212,6 +213,7 @@ public class vista extends javax.swing.JFrame {
         });
     }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
