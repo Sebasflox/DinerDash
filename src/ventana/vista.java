@@ -5,6 +5,8 @@
  */
 package ventana;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author rober
@@ -29,6 +31,28 @@ public class vista extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -36,29 +60,122 @@ public class vista extends javax.swing.JFrame {
 
         jButton1.setBackground(java.awt.Color.darkGray);
         jButton1.setForeground(java.awt.Color.orange);
-        jButton1.setText("mesa 4");
+        jButton1.setText("Pago");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 530, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 210, -1, -1));
 
         jButton2.setBackground(java.awt.Color.darkGray);
         jButton2.setForeground(java.awt.Color.orange);
-        jButton2.setText("Pago");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 210, -1, -1));
+        jButton2.setText("Mesa 2, 2");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 560, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Custom Artboard.jpg"))); // NOI18N
-        jLabel1.setText("jlabelFondo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 2000, 1080));
+        jButton3.setText("Mesa 2,1");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 560, -1, -1));
+
+        jButton5.setText("Mesa 2, 3");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 570, -1, -1));
+
+        jButton4.setText("Mesa 6,1");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, 90, 40));
+
+        jButton6.setText("Mesa 4, 1");
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 590, -1, -1));
+
+        jButton7.setText("Mesa 6, 2");
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 750, -1, -1));
+
+        jButton8.setText("Mesa 6, 3");
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 750, -1, -1));
+
+        jButton9.setText("Mesa 2,  4");
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1710, 590, -1, -1));
+
+        jButton10.setText("Mesa 4, 2");
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 740, -1, -1));
+
+        jButton11.setText("Mesa 4, 3");
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 750, -1, -1));
+
+        jButton12.setText("Mesa 4, 4");
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1440, 750, -1, -1));
+
+        jButton13.setText("Mesa 4,5");
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1720, 740, -1, -1));
+
+        jButton14.setText("Mesa 6, 4");
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 910, -1, -1));
+
+        jButton15.setText("Mesa 6, 5");
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 910, -1, -1));
+
+        jButton16.setText("Mesa 6, 7");
+        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 910, -1, -1));
+
+        jButton17.setText("Mesa 6, 8");
+        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 910, -1, -1));
+
+        jButton18.setText("Mesa 6, 9");
+        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 910, -1, -1));
+
+        jButton19.setText("Mesa 6,10");
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1730, 900, -1, -1));
+
+        jButton21.setText("Banquillo2");
+        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1510, 480, -1, -1));
+
+        jButton20.setText("Banquillo 1");
+        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 480, 110, 30));
+
+        jButton22.setText("Banquillo 3");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1640, 480, -1, -1));
+
+        jButton23.setText("Banquillo 4");
+        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1780, 480, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Custom Artboard.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 50, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+               JOptionPane.showMessageDialog(null,"Pago realizado");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -97,7 +214,29 @@ public class vista extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
