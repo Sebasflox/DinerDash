@@ -3,7 +3,7 @@ package dinerdash;
 
 public class Cola_FilaEntrada {
     
-    private Nodo_FilaEntrada first; //Puntero al principio
+    public Nodo_FilaEntrada first; //Puntero al principio
     private Nodo_FilaEntrada last; //Puntero al final
     
     
@@ -41,8 +41,8 @@ public class Cola_FilaEntrada {
         return contador;
     }
     public void imprimir (){
-        System.out.println(first.fila_de_la_entrada); //este es el valor del primero de la cola
-      
+        System.out.println(first.fila_de_la_entrada);
+        
     }
 
 }   
