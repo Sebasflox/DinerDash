@@ -7,6 +7,7 @@ package ventana;
 
 import dinerdash.BusinessLogic;
 import dinerdash.Cola_FilaEntrada;
+//import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -30,12 +31,12 @@ public class vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Impresion = new javax.swing.JButton();
+        Inicio_juego = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        Mesa6 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
@@ -54,18 +55,19 @@ public class vista extends javax.swing.JFrame {
         jButton20 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Impresion.setText("Entrar");
-        Impresion.addActionListener(new java.awt.event.ActionListener() {
+        Inicio_juego.setText("Iniciar juego");
+        Inicio_juego.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImpresionActionPerformed(evt);
+                Inicio_juegoActionPerformed(evt);
             }
         });
-        getContentPane().add(Impresion, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
+        getContentPane().add(Inicio_juego, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
         jButton1.setBackground(java.awt.Color.darkGray);
         jButton1.setForeground(java.awt.Color.orange);
@@ -93,13 +95,13 @@ public class vista extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 570, -1, -1));
 
-        jButton4.setText("Mesa 6,1");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        Mesa6.setText("Mesa 6,1");
+        Mesa6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                Mesa6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 90, 40));
+        getContentPane().add(Mesa6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 90, 40));
 
         jButton6.setText("Mesa 4, 1");
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 590, -1, -1));
@@ -160,6 +162,14 @@ public class vista extends javax.swing.JFrame {
         jButton23.setText("Banquillo 4");
         getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1780, 480, -1, -1));
 
+        jButton24.setText("Entrar");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Custom Artboard.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, -1));
 
@@ -179,15 +189,20 @@ public class vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton22ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void Mesa6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mesa6ActionPerformed
+        entrada.dequeue();
+        entrada.imprimir();
+    }//GEN-LAST:event_Mesa6ActionPerformed
 
-    private void ImpresionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImpresionActionPerformed
+    private void Inicio_juegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Inicio_juegoActionPerformed
 
-        JOptionPane.showMessageDialog(null, logica.Random());
+        //logica.Random();
         //JOptionPane.showMessageDialog(null, entrada.contar());
-    }//GEN-LAST:event_ImpresionActionPerformed
+    }//GEN-LAST:event_Inicio_juegoActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+            entrada.imprimir();
+    }//GEN-LAST:event_jButton24ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,7 +241,8 @@ public class vista extends javax.swing.JFrame {
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Impresion;
+    private javax.swing.JButton Inicio_juego;
+    private javax.swing.JButton Mesa6;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -243,8 +259,8 @@ public class vista extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
