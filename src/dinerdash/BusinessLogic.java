@@ -17,7 +17,6 @@ public class BusinessLogic {
             app.contar(); //este imprime el contador de los datos en la cola
 
     }
-
 }
         
 
