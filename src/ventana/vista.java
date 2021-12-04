@@ -5,20 +5,20 @@
  */
 package ventana;
 
+import dinerdash.BusinessLogic;
+import dinerdash.Cola_FilaEntrada;
 import javax.swing.JOptionPane;
 
 
-/**
- *
- * @author rober
- */
+        
 public class vista extends javax.swing.JFrame {
+    BusinessLogic logica = new BusinessLogic();
+    Cola_FilaEntrada entrada = new Cola_FilaEntrada();
 
-    /**
-     * Creates new form vista
-     */
+    
     public vista() {
         initComponents();
+        
     }
 
     /**
@@ -30,6 +30,7 @@ public class vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Impresion = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -54,10 +55,17 @@ public class vista extends javax.swing.JFrame {
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Impresion.setText("Entrar");
+        Impresion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImpresionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Impresion, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
 
         jButton1.setBackground(java.awt.Color.darkGray);
         jButton1.setForeground(java.awt.Color.orange);
@@ -91,7 +99,7 @@ public class vista extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, 90, 40));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 90, 40));
 
         jButton6.setText("Mesa 4, 1");
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 590, -1, -1));
@@ -153,10 +161,7 @@ public class vista extends javax.swing.JFrame {
         getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1780, 480, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Custom Artboard.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
-
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 50, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -177,6 +182,12 @@ public class vista extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void ImpresionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImpresionActionPerformed
+
+        JOptionPane.showMessageDialog(null, logica.Random());
+        //JOptionPane.showMessageDialog(null, entrada.contar());
+    }//GEN-LAST:event_ImpresionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,6 +226,7 @@ public class vista extends javax.swing.JFrame {
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Impresion;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -238,7 +250,6 @@ public class vista extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
