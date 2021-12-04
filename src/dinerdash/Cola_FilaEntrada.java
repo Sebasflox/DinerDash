@@ -5,50 +5,45 @@ public class Cola_FilaEntrada {
     
     private Nodo_FilaEntrada first; //Puntero al principio
     private Nodo_FilaEntrada last; //Puntero al final
-    int valor;
     
     
-    Cola_FilaEntrada(){
+    public Cola_FilaEntrada(){
         first = last = null;
     }
     
     //Insertar final cola
-    public void enqueue (int fila_de_la_entrada) { //Insertar al final de la cola
+    public void enqueue (int fila_de_la_entrada) { 
         Nodo_FilaEntrada nuevo = new Nodo_FilaEntrada();
         nuevo.fila_de_la_entrada = fila_de_la_entrada;
         nuevo.siguiente = null;
-        if (first == null) //Si el primero es null (No hay nada en la cola)
-            first = last = nuevo; //Entonces al primero y ultimo le asigno el nuevo nodo
-        else { //y si tiene un valor
-            last.siguiente = nuevo; //Entonces apunta al final
-            last = nuevo; //Y le asigno el nuevo nodo
+        if (first == null) 
+            first = last = nuevo; 
+        else { 
+            last.siguiente = nuevo; 
+            last = nuevo; 
         }
     }
     
     //Borrar Inicio Cola
-    public void dequeue () { //Borra el primero de la cola
-        if (first != null) //Si el primero es diferente a null (tiene un dato)
-            first = first.siguiente; //El puntero first cambia de posicion
-    }
-    public int contar() {
-        int contador=0;
-        Nodo_FilaEntrada c=this.first;
-        while(c!=null)
-        {
-            contador++;
-            c=c.siguiente;
-        }
-        System.out.println("Numero de datos en la cola: "+contador); //esto cuenta los datos en la cola
-        return contador;
-
+    public void dequeue () { 
+        if (first != null) 
+            first = first.siguiente; 
     }
     
-    public void imprimir (){     
-    System.out.println(first.fila_de_la_entrada); //este es el valor del primero de la cola
-    valor = first.fila_de_la_entrada; //le asignamos a la variable Valor, el valor del primero en la cola
-
+    public int contar(){ //Para saber cuantos nodos hay en la cola
+        int contador = 0;
+        Nodo_FilaEntrada c = this.first;
+        while (c!=null){
+            contador ++;
+            c = c.siguiente;
+        }
+        System.out.println("Hay un total de " + contador + " nodos");
+        return contador;
     }
-     
+    public void imprimir (){
+        System.out.println(first.fila_de_la_entrada); //este es el valor del primero de la cola
+      
+    }
 
-    }   
+}   
 
